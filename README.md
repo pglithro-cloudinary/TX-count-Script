@@ -36,10 +36,10 @@ Before using the script, ensure you have:
 
 ## 📦 Installation
 
-1. **Save the script** as `cld-transform-counter.sh`:
+1. **Save the script** as `txcount.sh`:
 
    ```bash
-   nano cld-transform-counter.sh
+   nano txcount.sh
    ```
 
    Paste in the full script contents.
@@ -47,13 +47,13 @@ Before using the script, ensure you have:
 2. **Make it executable:**
 
    ```bash
-   chmod +x cld-transform-counter.sh
+   chmod +x txcount.sh
    ```
 
 3. (Optional) **Add to your PATH** so it’s available globally:
 
    ```bash
-   sudo mv cld-transform-counter.sh /usr/local/bin/cld-transform-counter
+   sudo mv txcount.sh /usr/local/bin/cld-transform-counter
    ```
 
 ---
@@ -65,7 +65,7 @@ Before using the script, ensure you have:
 Runs once — exits as soon as a transformation count increase is detected.
 
 ```bash
-./cld-transform-counter.sh "https://res.cloudinary.com/<cloud_name>/image/upload/w_500/sample.jpg"
+./txcount.sh "https://res.cloudinary.com/<cloud_name>/image/upload/w_500/sample.jpg"
 ```
 
 **Example output:**
@@ -85,7 +85,7 @@ Baseline usage: 24934
 Keep the script running to monitor usage continuously.
 
 ```bash
-./cld-transform-counter.sh --watch "https://res.cloudinary.com/<cloud_name>/image/upload/w_500/sample.jpg"
+./txcount.sh --watch "https://res.cloudinary.com/<cloud_name>/image/upload/w_500/sample.jpg"
 ```
 
 **Example output:**
