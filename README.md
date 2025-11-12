@@ -53,7 +53,7 @@ Before using the script, ensure you have:
 3. (Optional) **Add to your PATH** so it’s available globally:
 
    ```bash
-   sudo mv txcount.sh /usr/local/bin/cld-transform-counter
+   sudo mv txcount.sh /usr/local/bin/txcount
    ```
 
 ---
